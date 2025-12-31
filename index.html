@@ -671,27 +671,35 @@
 						</div>
 					</section>
 					<section id="commentsubmission-section">
-						<div id="image24" class="image-component instance-24 full screen" data-position="center">
-							<span class="frame"><img src="assets/images/image24.jpg" alt="" /></span>
+	<div id="image24" class="image-component instance-24 full screen" data-position="center">
+		<span class="frame"><img src="assets/images/image24.jpg" alt="" /></span>
+	</div>
+	<div id="container23" class="container-component instance-23 default full screen">
+		<div class="wrapper">
+			<div class="inner">
+				<form enctype="multipart/form-data" id="form02" method="post" action="#" class="form-component instance-2">
+					<div class="inner">
+						<div class="field" data-type="textarea">
+							<textarea data-gramm_editor="false" name="comments-1-per-line" id="form02-comments-1-per-line" placeholder="Comments (1 per line)" required></textarea>
 						</div>
-						<div id="container23" class="container-component instance-23 default full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<form enctype="multipart/form-data" id="form02" method="post" action="#" class="form-component instance-2">
-										<div class="inner">
-											<div class="field" data-type="textarea">
-												<textarea data-gramm_editor="false" name="comments-1-per-line" id="form02-comments-1-per-line" placeholder="Comments (1 per line)" required></textarea>
-											</div>
-											<div class="actions">
-												<button type="submit">Submit</button>
-											</div>
-										</div>
-										<input type="hidden" name="id" value="form02" />
-									</form>
-								</div>
-							</div>
+						<div class="actions">
+							<button type="submit">Submit</button>
 						</div>
-					</section>
+					</div>
+					<input type="hidden" name="id" value="form02" />
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	document.getElementById('form02').addEventListener('submit', function () {
+		// redirect to #addtopost after submission
+		window.location.hash = 'addtopost';
+	});
+</script>
+
 					<section id="likes-section">
 						<div id="image09" class="image-component instance-9 full screen" data-position="center">
 							<span class="frame"><img src="assets/images/image09.jpg" alt="" /></span>
